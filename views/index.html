@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Guarderia con autenticación {% endblock  %}</title>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<header>
+    <h1><a href="/">Guarderia</a></h1>
+    <div class="divbtnLogin">        
+        <a href="/login" class="btn">Login</a>
+    </div>         
+</header>
+<body>
+    {% block content %}
+    <div calss="divImg">
+        <img id="imgIndex" src="../static/img/guarderia.jpg" class="responsiveImg" alt="guarderia la favorita">
+    </div>
+    {% endblock %}
+</body>
+<footer>
+    <p>&copy; La guarderia con autenticación.</p>
+</footer>
+</html>
